@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 280" fill="none">
+  <defs>
+    <linearGradient id="vbg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f7faf8"/>
+      <stop offset="100%" stop-color="#e8f5ee"/>
+    </linearGradient>
+    <linearGradient id="valley" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fee2e2"/>
+      <stop offset="100%" stop-color="#fecaca"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="560" height="280" rx="12" fill="url(#vbg)"/>
+
+  <!-- Valley fill -->
+  <path d="M160,60 Q200,220 280,220 Q360,220 400,60" fill="url(#valley)" opacity="0.4"/>
+
+  <!-- Axes -->
+  <line x1="50" y1="240" x2="520" y2="240" stroke="#4a5e52" stroke-width="1.5"/>
+  <line x1="50" y1="20" x2="50" y2="240" stroke="#4a5e52" stroke-width="1.5"/>
+
+  <!-- Y axis label -->
+  <text x="20" y="135" fill="#4a5e52" font-size="11" font-family="sans-serif" transform="rotate(-90,20,135)">Investment / TRL</text>
+
+  <!-- X axis labels -->
+  <text x="80" y="258" fill="#4a5e52" font-size="10" font-family="sans-serif">Basic Research</text>
+  <text x="220" y="258" fill="#c53030" font-size="10" font-weight="700" font-family="sans-serif">Valley of Death</text>
+  <text x="400" y="258" fill="#4a5e52" font-size="10" font-family="sans-serif">Market Ready</text>
+
+  <!-- TRL curve (research peak, valley, commercialization rise) -->
+  <path d="M60,200 Q100,60 160,60 Q200,60 220,130 Q250,210 280,220 Q310,210 340,130 Q360,60 400,60 Q440,60 500,40"
+        stroke="#2d7a4f" stroke-width="3" fill="none" stroke-linecap="round"/>
+
+  <!-- Funding gap shading -->
+  <path d="M160,60 Q200,220 280,220 Q360,220 400,60 L400,240 L160,240 Z"
+        fill="#ef4444" opacity="0.08"/>
+
+  <!-- Valley label -->
+  <text x="280" y="205" text-anchor="middle" fill="#c53030" font-size="12" font-weight="700" font-family="sans-serif">Funding Gap</text>
+
+  <!-- Bridge arrow -->
+  <path d="M180,130 Q280,80 380,130" stroke="#c8a84b" stroke-width="2.5" stroke-dasharray="6,4" fill="none"/>
+  <polygon points="380,125 390,130 380,135" fill="#c8a84b"/>
+  <text x="280" y="100" text-anchor="middle" fill="#92400e" font-size="11" font-weight="600" font-family="sans-serif">SBIR · Ventures Fund · Accelerators</text>
+
+  <!-- TRL markers -->
+  <circle cx="100" cy="100" r="5" fill="#2d7a4f"/>
+  <text x="100" y="90" text-anchor="middle" fill="#2d7a4f" font-size="9" font-family="sans-serif">TRL 3</text>
+  <circle cx="280" cy="220" r="5" fill="#ef4444"/>
+  <circle cx="460" cy="55" r="5" fill="#2d7a4f"/>
+  <text x="460" y="45" text-anchor="middle" fill="#2d7a4f" font-size="9" font-family="sans-serif">TRL 9</text>
+</svg>

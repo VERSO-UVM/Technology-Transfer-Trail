@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" fill="none">
+  <!-- Sky gradient background -->
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1a4a2e" stop-opacity="0.0"/>
+      <stop offset="100%" stop-color="#2d7a4f" stop-opacity="0.15"/>
+    </linearGradient>
+    <linearGradient id="mountain1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1a4a2e"/>
+      <stop offset="100%" stop-color="#2d5a3f"/>
+    </linearGradient>
+    <linearGradient id="mountain2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2d7a4f"/>
+      <stop offset="100%" stop-color="#3d8a5f"/>
+    </linearGradient>
+    <linearGradient id="mountain3" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#4caf77"/>
+      <stop offset="100%" stop-color="#5abf87"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background mountains -->
+  <polygon points="600,400 700,150 800,400" fill="url(#mountain1)" opacity="0.5"/>
+  <polygon points="500,400 630,100 760,400" fill="url(#mountain1)" opacity="0.7"/>
+
+  <!-- Mid mountains -->
+  <polygon points="300,400 480,80 660,400" fill="url(#mountain2)" opacity="0.85"/>
+  <polygon points="100,400 300,180 500,400" fill="url(#mountain2)"/>
+
+  <!-- Foreground mountain -->
+  <polygon points="-50,400 200,50 450,400" fill="url(#mountain3)"/>
+
+  <!-- Snow cap -->
+  <polygon points="200,50 175,120 225,120" fill="white" opacity="0.9"/>
+
+  <!-- Trail path -->
+  <path d="M 60,380 Q 120,340 160,300 Q 200,260 180,220 Q 160,180 200,150 Q 240,120 200,80"
+        stroke="white" stroke-width="3" stroke-dasharray="8,5" fill="none" opacity="0.7"/>
+
+  <!-- Trail dots (waypoints) -->
+  <circle cx="60" cy="380" r="6" fill="#c8a84b"/>
+  <circle cx="160" cy="300" r="6" fill="#c8a84b"/>
+  <circle cx="180" cy="220" r="6" fill="#c8a84b"/>
+  <circle cx="200" cy="150" r="6" fill="#c8a84b"/>
+  <circle cx="200" cy="80" r="9" fill="#c8a84b"/>
+
+  <!-- Summit flag -->
+  <line x1="200" y1="80" x2="200" y2="45" stroke="white" stroke-width="2"/>
+  <polygon points="200,45 220,55 200,65" fill="#c8a84b"/>
+
+  <!-- Trees (simple triangles) -->
+  <polygon points="350,400 365,360 380,400" fill="#1a4a2e" opacity="0.8"/>
+  <polygon points="370,400 388,350 406,400" fill="#1a4a2e" opacity="0.9"/>
+  <polygon points="420,400 440,345 460,400" fill="#1a4a2e"/>
+  <polygon points="460,400 477,355 494,400" fill="#1a4a2e" opacity="0.85"/>
+  <polygon points="510,400 525,362 540,400" fill="#2d5a3f" opacity="0.7"/>
+  <polygon points="545,400 562,358 579,400" fill="#2d5a3f" opacity="0.6"/>
+  <polygon points="620,400 634,368 648,400" fill="#2d5a3f" opacity="0.5"/>
+  <polygon points="660,400 676,372 692,400" fill="#2d5a3f" opacity="0.4"/>
+
+  <!-- Ground -->
+  <rect x="0" y="390" width="800" height="10" fill="#1a4a2e" opacity="0.3"/>
+</svg>

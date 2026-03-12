@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none">
+  <!-- Shield shape -->
+  <path d="M100,10 L180,45 L180,110 C180,155 140,185 100,195 C60,185 20,155 20,110 L20,45 Z"
+        fill="#1a4a2e" stroke="#c8a84b" stroke-width="3"/>
+
+  <!-- Inner shield -->
+  <path d="M100,25 L165,55 L165,108 C165,145 132,170 100,179 C68,170 35,145 35,108 L35,55 Z"
+        fill="#2d7a4f" opacity="0.6"/>
+
+  <!-- UVM letters -->
+  <text x="100" y="105" text-anchor="middle" fill="white" font-size="32" font-weight="900"
+        font-family="Georgia, serif" letter-spacing="2">UVM</text>
+
+  <!-- Tagline -->
+  <text x="100" y="130" text-anchor="middle" fill="#c8a84b" font-size="10"
+        font-family="sans-serif" letter-spacing="1">INNOVATIONS</text>
+
+  <!-- Laurel hint (simple arcs) -->
+  <path d="M60,145 Q50,130 55,115" stroke="#c8a84b" stroke-width="1.5" fill="none" opacity="0.7"/>
+  <path d="M140,145 Q150,130 145,115" stroke="#c8a84b" stroke-width="1.5" fill="none" opacity="0.7"/>
+  <line x1="60" y1="145" x2="140" y2="145" stroke="#c8a84b" stroke-width="1" opacity="0.4"/>
+</svg>
