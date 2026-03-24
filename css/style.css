@@ -700,3 +700,67 @@ details[open] summary.faq-q::after { content: '−'; }
 
 .process-table tr:last-child td { border-bottom: none; }
 .process-table tr:hover td { background: var(--green-pale); }
+
+/* ============================================================
+   WORKFLOWS PAGE
+   ============================================================ */
+.workflow-phase-grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.workflow-phase-card {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 1rem;
+  box-shadow: var(--shadow);
+}
+
+.workflow-phase-card h3 {
+  margin-top: 0.35rem;
+  margin-bottom: 0.45rem;
+}
+
+.workflow-phase-card ul {
+  font-size: 0.9rem;
+  margin-top: 0.75rem;
+}
+
+.workflow-lanes {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.25rem;
+}
+
+.workflow-lane {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 1.25rem 1.35rem;
+  box-shadow: var(--shadow);
+}
+
+.workflow-lane-sub {
+  font-size: 0.88rem;
+  color: var(--text-light);
+  margin-bottom: 0.8rem;
+}
+
+.workflow-lane ol {
+  margin-bottom: 0;
+}
+
+@media (max-width: 1024px) {
+  .workflow-phase-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .workflow-phase-grid,
+  .workflow-lanes {
+    grid-template-columns: 1fr;
+  }
+}
